@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Của Tôi</title>
+    <style>
+        /* CSS có thể được bao gồm ở đây */
+        body {font-family: Arial, sans-serif;}
+        h1 {color: #333;}
+    </style>
+</head>
+<body>
+    <header>
+        <div style="text-align: center;">
+    <p style="font-size: 30px;font-weight: bold;">Điểm danh sinh viên</p>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h1>Đăng nhập</h1>
+            <ul>
+                <form action="/submit" method="post">
+                <div style="text-align:center ;">
+                    <p style="font-size: 20px;">
+                    <label for="a">Khoa:</label>
+                    <input type="text" id="a" khoa="a">
+                    </p>
+                    <p style="font-size: 20px;">
+                    <label for="b">Lớp:</label>
+                    <input type="text" id="b" lop="b">
+                    </p>
+                    <p style="font-size: 20px;">
+                    <label for="c">Họ và tên:</label>
+                    <input type="text" id="c" hovaten="c">
+                    </p>
+                    <p>
+                        <button onclick="dd()">Xác Nhận</button>
+                        <input type="file" accept="image/*" onchange="detectFaces(event)">
+                    </p>
+                </div>
+                </form>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Được làm bởi K73A1</p>
+    </footer>
+
+</body>
+</html>
